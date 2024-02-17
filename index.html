@@ -1,48 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> P-Ticket</title>
-    <!-- daisy Ui and Tailwind -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> P-Ticket</title>
+  <!-- daisy Ui and Tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
-    <header class="max-w-screen-2xl mx-auto">
-        <nav>
-            <div class="navbar bg-base-100 border-2 rounded-2xl">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Home</a></li>
-                      <li><a>About</a></li>
-                      <li><a>Destination</a></li>
-                      <li><a>Search</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-2xl font-bold">P-Ticket</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1 gap-x-8 text-base font-semibold">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Destination</a></li>
-                    <li><a>Search</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end text-3xl font-extrabold ">
-                    <button class="btn">
-                        Button
-                        <img src="images/bus-icon.png" alt="">
-                      </button>
-                </div>
-              </div>
-        </nav>
-    </header>
+
+<body class="max-w-screen-2xl mx-auto">
+  <header>
+    <nav>
+      <div class="navbar bg-base-100 border-2 rounded-2xl">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-2xl font-bold">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 gap-x-8 text-base font-semibold">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end text-3xl font-extrabold ">
+          <button class="btn">
+            Button
+            <img src="images/bus-icon.png" alt="">
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main class="lg:mt-10  mt-2 relative">
+      <div class="hero min-h-[70vh] rounded-3xl" style="background-image: url(images/banner.png);">
+        <div class="rounded-3xl"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md mb-56">
+            <h1 class="mb-8 text-5xl font-bold ">Welcome Travelers</h1>
+            <h4 class="mb-10 text-5xl font-bold text-[#1DD100]">P Paribahan</h4>
+            <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            <button class="btn text-base font-bold bg-[#1DD100] w-36 border-0">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+      <!-- card conteiner -->
+      <div class="three-card-conteiner lg:flex gap-x-6  lg:absolute -bottom-12 right-72 ">
+        <!-- card 01 -->
+        <div class="card border-2 border-b-lime-500 bg-white my-4">
+          <div class="flex p-8">
+            <img src="images/people.png" alt="">
+            <div class="ml-4">
+              <h1 class="font-bold text-3xl">500K+</h1>
+              <p class="text-gray-400">Registered users</p>
+            </div>
+          </div>
+        </div>
+        <!-- end -->
+        <!-- card 02 -->
+        <div class="card border-2 border-b-lime-500 bg-white my-4">
+          <div class="flex p-8">
+            <img src="images/ticket-cupon.png" alt="">
+            <div class="ml-4">
+              <h1 class="font-bold text-3xl">1.7 lacks</h1>
+              <p class="text-gray-400">Tickets sold</p>
+            </div>
+          </div>
+        </div>
+        <!-- end -->
+        <!-- card 01 -->
+        <div class="card border-2 border-b-lime-500 bg-white my-4">
+          <div class="flex p-8">
+            <img src="images/stoppage.png" alt="">
+            <div class="ml-4">
+              <h1 class="font-bold text-3xl">80K+</h1>
+              <p class="text-gray-400">Rental partners</p>
+            </div>
+          </div>
+        </div>
+        <!-- end -->
+      </div>
+    </main>
+  </header>
+  <!-- Best offers for you -->
+  <section>
+    <h1 class="font-bold text-3xl text-center mt-28">Best offers for you</h1>
+    <article class="lg:flex justify-around mt-8">
+      <div class="lg:flex">
+        <div class="w-96 bg-yellow-400 lg:rounded-l-2xl">
+          <div class="card-body items-s text-start">
+            <h1 class="font-bold text-3xl">15% OFF</h1>
+            <p class="text-base text-black">on your next purchase</p>
+            <p>use by January 2024</p>
+          </div>
+        </div>
+        <div>
+          <div class="lg:w-78 bg-yellow-400 lg:rounded-r-2xl lg:border-l-2 lg:border-dashed ">
+            <div class="card-body items-s text-start">
+              <h1 class="font-bold text-3xl">15% OFF</h1>
+              <p class="text-base text-black">on your next purchase</p>
+              <p>use by January 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:flex">
+        <div class="w-96 bg-yellow-400 lg:rounded-l-2xl">
+          <div class="card-body items-s text-start">
+            <h1 class="font-bold text-3xl">20% OFF</h1>
+            <p class="text-base text-black">on your next purchase</p>
+            <p>use by January 2024</p>
+          </div>
+        </div>
+        <div>
+          <div class="w-78 bg-yellow-400 lg:rounded-r-2xl lg:border-l-2 lg:border-dashed ">
+            <div class="card-body items-s text-start">
+              <h1 class="font-bold text-3xl">Couple 20</h1>
+              <p class="text-base text-black">on your next purchase</p>
+              <p>Coupon Code</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <div class="text-center mt-10">
+      <button class="btn btn-outline btn-success w-44">See All Offers</button>
+    </div>
+  </section>
 </body>
+
 </html>
